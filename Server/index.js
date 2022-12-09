@@ -6,14 +6,15 @@ import {addUser,getuserinroom,removeUser,getUser,isEmpty} from './user.js';
 import opentok from "opentok";
 import { getSessionid, addsession, removesession } from "./session.js";
 import {addcode,removecode,getcode} from './code.js'
-
+import {dotenv} from 'dotenv'
+dotenv.config();
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-const SECRET = 'bfae57d1febfc27d70b252700341ef81093def2f'
-const API_KEY = "47601141";
+const SECRET = process.env.SECRET
+const API_KEY = process.env.API_KEY;
 // video api
 const openTok = new opentok(
   API_KEY,

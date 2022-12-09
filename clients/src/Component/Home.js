@@ -20,11 +20,11 @@ export default function Home() {
               </div>
               <div className="p-6 md:py-14">
                 <h1 className="text-[2rem] font-bold text-gradient">
-                  Code Collab
+                  Code Share
                 </h1>
                 <p className="pt-3 font-semibold text-white">
                   {" "}
-                  CodeCollab is a realtime coding platform enables you to
+                  CodeShare is a realtime coding platform enables you to
                   connect to your peers and work on coding problems
                 </p>
                 <p className="pt-3 font-semibold text-white">

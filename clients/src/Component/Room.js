@@ -286,9 +286,9 @@ function Room() {
             <div id='voicee' className='voice1 absolute z-20'>
                 <OTSession apiKey="47601141" sessionId={localStorage.getItem('sessionId')} token={localStorage.getItem('token')}>
                 <div className="sm:grid sm:grid-cols-2">
-                <OTPublisher properties={{ width: 50, height: 50 ,publishVideo:true}}/>
+                <OTPublisher properties={{ width: 50, height: 50 ,publishVideo:false}}/>
                 <OTStreams>
-                <OTSubscriber properties={{ width: 50, height: 50 ,subscribeToVideo:true}}/>
+                <OTSubscriber properties={{ width: 50, height: 50 ,subscribeToVideo:false}}/>
                 </OTStreams>
                 </div>
                </OTSession>                  

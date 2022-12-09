@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+
+@tailwind base;
+@tailwind components;
+.mygradient{
+    background: rgb(34,193,195);
+    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(130,190,129,1) 64%, rgba(226,188,64,1) 100%, rgba(253,187,45,1) 100%);
+}
+.text-gradient{
+    background: -webkit-linear-gradient(rgb(238, 84, 84), rgb(236, 213, 129));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-primary{
+    @apply text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center 
+ }
+@tailwind utilities;

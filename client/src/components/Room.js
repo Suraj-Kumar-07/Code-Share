@@ -60,8 +60,8 @@ const [loading, setLoading] = useState(false)
   const [stdoutt, setStdo] = useState("");
   const [contri, setContri] = useState(false)
 
-const ENDPOINT="http://localhost:5000";
-// const ENDPOINT="https://codecollab7z2.onrender.com";
+const  HOST="http://localhost:5000";
+// const  HOST="https://codecollab7z2.onrender.com";
 
 
 useEffect(() => {
@@ -80,7 +80,7 @@ useEffect(() => {
 
  }
  
- socket=io(ENDPOINT);
+ socket=io( HOST);
 
  if(!name){
   setName(localStorage.getItem('email').split('@')[0]);
@@ -106,7 +106,7 @@ return ()=>{
 
 
 }
-}, [ENDPOINT,location.search,navigate,notify]);
+}, [ HOST,location.search,navigate,notify]);
 
 useEffect(() => {
  

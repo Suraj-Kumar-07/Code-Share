@@ -22,8 +22,8 @@ function Editornav({source,chat,setChat,compiler,room,handlesendcode,whiteBoard,
         setContri(!contri)
    
     }
-    const host="http:localhost:3000";
-    // const host="https://codecollabclient-93wj.vercel.app";
+    // const host="http:localhost:3000";
+    const host="https://codecollabclient-93wj.vercel.app";
 
   return (
     <div>

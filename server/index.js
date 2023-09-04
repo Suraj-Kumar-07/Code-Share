@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 
-const OT = new opentok(process.env.APIKEY, process.env.SECRET);
+const OT = new opentok(process.env.API_KEY, process.env.SECRET);
 console.log(OT)
 const port = process.env.PORT || 5000;
 
@@ -22,7 +22,6 @@ const httpServer = createServer(app);
 const io = new Server(httpServer, {
   cors: {
     origin: "http://localhost:3000",
-
     methods: ["GET", "POST"]
   }
 });

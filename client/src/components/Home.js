@@ -1,9 +1,11 @@
 import React from 'react'
 import mainp from './mainp.png'
-import whiteboard from './whiteboard.png'
+// import whiteboard from './whiteboard.png'
 import code from './code.png'
 import chat from './chat.png'
 import {Link} from 'react-router-dom'
+
+
 function Home() {
   return (
     <>
@@ -14,8 +16,8 @@ function Home() {
             <img className='h-[100%] m-[auto]' src={mainp} alt=""/>
         </div>
         <div className='p-6 md:py-14'>
-         <h1 className='text-[2rem] font-bold text-[#155bd7]'>Code Collab</h1>
-       <p className='pt-3 font-semibold'> CodeCollab is a realtime coding platform enables you to connect to your peers and work on coding problems</p>
+         <h1 className='text-[2rem] font-bold text-[#155bd7]'>Code Share</h1>
+       <p className='pt-3 font-semibold'> Code Share is a realtime coding platform enables you to connect to your peers and work on coding problems</p>
        <p className='pt-3 font-semibold'>
         Explanation of the problem and its solution become easy with features provides in this platform. 
        </p>

@@ -9,12 +9,11 @@ function Navbar({notify}) {
     let navigate=useNavigate();
   return (
     <div>
-    
         <nav>
            <div className='w-[100vw] h-16 flex justify-between items-center bg-blue-800'>
             <div className='flex'>
               <Link to="/"> <div className='p-3 font-bold text-white'>
-                  Code Collab
+                  Code Share
               </div></Link>
             <ul className='flex  space-x-2'>
             <Link to="/"> <li>

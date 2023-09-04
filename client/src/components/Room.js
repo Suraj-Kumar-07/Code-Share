@@ -60,8 +60,8 @@ const [loading, setLoading] = useState(false)
   const [stdoutt, setStdo] = useState("");
   const [contri, setContri] = useState(false)
 
-const  HOST="http://localhost:5000";
-// const  HOST="https://codecollab7z2.onrender.com";
+// const  HOST="http://localhost:5000";
+const  HOST="https://codeshare-07-prod.onrender.com";
 
 
 useEffect(() => {

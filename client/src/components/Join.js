@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Spinner from './Spinner';
 function Join({ notify }) {
-    const host = "http://localhost:5000";
+    const host = "https://codeshare-07-prod.onrender.com";
+    // const host="http://localhost:5000";
     const [loading, setLoading] = useState(false)
     let navigate = useNavigate();
     useEffect(() => {
@@ -16,6 +17,7 @@ function Join({ notify }) {
     const [room, setRoom] = useState("");
 
     const handlesubmit = async () => {
+        console.log(`${host}/token`,1)
         if ((!name || !room)) {
             notify('Both name and Room required');
             return;
@@ -38,11 +40,13 @@ function Join({ notify }) {
         navigate(`/room?name=${name}&room=${room}`);
     }
     const handlecreate = async () => {
+        console.log(`${host}/token`,2)
         var room = localStorage.getItem('email');
         room = room.split('@')[0];
         var name = localStorage.getItem('email');
         name = name.split('@')[0];
         setLoading(true)
+        console.log(room, name)
         const response = await fetch(`${host}/token`, {
             method: 'POST',
 
@@ -52,6 +56,7 @@ function Join({ notify }) {
             },
             body: JSON.stringify({ room: room })
         });
+        console.log('hi')
         const data = await response.json();
         setLoading(false);
 

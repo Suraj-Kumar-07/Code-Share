@@ -117,6 +117,7 @@ io.on("connection", (socket) => {
 // });
 
 app.post('/token', async (req, res) => {
+  console.log('hi')
   const { room } = req.body;
   console.log(room)
   OT.createSession(async (err, session) => {
@@ -133,6 +134,6 @@ app.post('/token', async (req, res) => {
 })
 
 httpServer.listen(port, () => {
-  console.log("server is running")
+  console.log("server is running on ", port)
 });
 // module.exports=httpServer;
